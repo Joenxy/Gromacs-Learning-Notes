@@ -1,0 +1,8 @@
+tolerance 2.0
+filetype pdb
+output system.pdb
+
+structure SOL_GMX.pdb 
+  number  1000 
+  inside box 0 0 0 31 31 31
+end structure 

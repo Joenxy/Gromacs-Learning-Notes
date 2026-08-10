@@ -1,0 +1,36 @@
+;   File MOL_GMX.top  was generated
+;   By user: uu13031 (3072)
+;   On host: icube
+;   At date: Mon. September  1 15:36:54 2023
+;
+;   This is a standalone topology file
+;
+;   Created by:
+;   ParmEd:       ambergromacs.py, VERSION 3.0.0+57.g74a84d30
+;   Executable:   ambergromacs.py
+;   Library dir:  /usr/local/gromacs/share/gromacs/top
+;   Command line:
+;     ./ambergromacs.py
+;
+
+[ defaults ]
+; nbfunc        comb-rule       gen-pairs       fudgeLJ fudgeQQ
+1               2               yes             0.5          0.83333333  
+
+[ atomtypes ]
+; name    at.num    mass    charge ptype  sigma      epsilon
+HW_tip4p     1       1.008   0.0000  A   0.00000e+00  0.00000e+00
+OW_tip4p     8      16.00    0.0000  A   3.15365e-01  6.48520e-01
+MW           0       0.0000  0.0000  D   0.00000e+00  0.00000e+00
+
+
+
+#include "tip4p.itp"
+
+[ system ]
+; Name
+Generic title
+
+[ molecules ]
+; Compound       #mols
+SOL               1000
